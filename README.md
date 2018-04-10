@@ -14,14 +14,24 @@ $ go get github.com/kchristidis/dauction
 ## Usage
 
 ```go
-var buyerBids, sellerBids []dauction.Bid
-buyerBids = append(buyerBids, dauction.Bid{1,10})
-sellerBids = append(sellerBids, dauction.Bid{1, 8})
-price, err := dauction.Price(buyerBids, sellerBids)
+// group buyer bids into a bid collection object
+bb1 := dauction.Bid{PricePerUnit: 6.5, Units: 2}
+bb2 := dauction.Bid{PricePerUnit: 10, Units: 2}
+buyerBids := dauction.BidCollection{bb1, bb2}
+
+// same for seller bids
+sb1 := dauction.Bid{PricePerUnit: 6.5, Units: 2}
+sb2 := dauction.Bid{PricePerUnit: 11, Units: 2}
+sellerBids := dauction.BidCollection{sb1, sb2}
+
+// settle the market
+res, err := dauction.Settle(buyerBids, sellerBids)
 if err != nil { // When no clearing price can be found
-    println(err)
+    fmt.Println(err)
 }
-println("The clearing price is:", price)
+// - clearing price: res.PricePerUnit
+// - number of units that can be cleared: res.Units
+fmt.Println(res)
 ```
 
 You may also wish to consult the package documentation in [GoDoc](http://godoc.org/github.com/kchristidis/overlap).

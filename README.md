@@ -29,8 +29,8 @@ res, err := dauction.Settle(buyerBids, sellerBids)
 if err != nil { // When no clearing price can be found
     fmt.Println(err)
 }
-// - clearing price: res.PricePerUnit
-// - number of units that can be cleared: res.Units
+// - res.PricePerUnit = 9.5 (clearing price)
+// - res.Units = 2 (number of units that can be cleared)
 fmt.Println(res)
 ```
 

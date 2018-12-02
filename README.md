@@ -3,7 +3,7 @@
 [![GoDoc](https://godoc.org/github.com/kchristidis/dauction?status.svg)](https://godoc.org/github.com/kchristidis/dauction)
 [![Build Status](https://travis-ci.org/kchristidis/dauction.svg?branch=master)](https://travis-ci.org/kchristidis/dauction)
 
-dauction faciliates the calculation of double auction clearing prices.
+dauction facilitates the calculation of double auction clearing prices.
 
 ## Installation
 

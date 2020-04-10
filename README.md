@@ -34,7 +34,7 @@ if err != nil { // When no clearing price can be found
 fmt.Println(res)
 ```
 
-You may also wish to consult the package documentation in [GoDoc](http://godoc.org/github.com/kchristidis/overlap).
+You may also wish to consult the package documentation in [GoDoc](http://godoc.org/github.com/kchristidis/dauction).
 
 ## Contributing
 

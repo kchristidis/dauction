@@ -23,11 +23,9 @@ of units that can be traded (res.Units) given that price.
 
 The price is calculated using the average mechanism, with a bias towards
 economic efficiency. Simply put, the calculated market-clearing price allows
-for  the largest possible number of units to be traded. Among two or more price
-points with the same number of tradeable units, the highest one is selected.
-(The economic efficiency principle dictates that "after all trading has
-completed, the items should be in the hands of those that value them the
-most.")
+for the largest possible number of units to be traded. When the number of
+tradeable units is maximized for more than one price point, the average value
+across all candidate price points is chosen as the market clear price.
 
 Settle will return an error if no clearing (equilibrium) price can be found for
 that market.

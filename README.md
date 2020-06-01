@@ -1,5 +1,6 @@
 # dauction
 
+[![DOI](https://zenodo.org/badge/124766146.svg)](https://zenodo.org/badge/latestdoi/124766146)
 [![GoDoc](https://godoc.org/github.com/kchristidis/dauction?status.svg)](https://godoc.org/github.com/kchristidis/dauction)
 [![Build Status](https://travis-ci.org/kchristidis/dauction.svg?branch=master)](https://travis-ci.org/kchristidis/dauction)
 
